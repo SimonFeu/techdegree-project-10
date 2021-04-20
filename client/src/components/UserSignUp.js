@@ -108,6 +108,7 @@ class UserSignUp extends Component {
                         }
                         <div id="validationMsg"></div>
                        
+                       {/* On submit the postData function is called. It receives the event object and the signIn function which is loaded via Consumer */}
                         <form onSubmit={(event) => this.postData(event, context.actions.signIn)}>
                             <label htmlFor="firstName">First Name</label>
                             <input 
