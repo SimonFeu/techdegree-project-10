@@ -2,8 +2,23 @@
 ### Full Stack App with React and a REST API
 This Full Stack App provides a way for users to administer a school database via a webbase "User Interface". Data is loaded and stored via the REST API.
 
+## Sign Up
+![image](https://user-images.githubusercontent.com/63255333/115454032-9fe26680-a220-11eb-91e9-6cf240aa80a8.png)
 
+## Sign In
+![image](https://user-images.githubusercontent.com/63255333/115453997-95c06800-a220-11eb-98f9-8c25c4cb8282.png)
+
+## Course overview
+![image](https://user-images.githubusercontent.com/63255333/115454090-ae308280-a220-11eb-99ba-dbb8675255c6.png)
+
+## Create a Course
+![image](https://user-images.githubusercontent.com/63255333/115454156-be486200-a220-11eb-81f5-04ed2287fa36.png)
+
+## Course Detail
 ![image](https://user-images.githubusercontent.com/63255333/115453924-74f81280-a220-11eb-97da-673d7fc1e9f3.png)
+
+## Update a Course
+![image](https://user-images.githubusercontent.com/63255333/115454186-c99b8d80-a220-11eb-87f0-8c623bb7e9ea.png)
 
 
 ## How to Download and Install
