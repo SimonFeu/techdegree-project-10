@@ -44,7 +44,7 @@ class UserSignUp extends Component {
         This function receives the data from state and sends it to the database via fetch.
         If the status code is 400 an response error message is save into the variable "errorMsg".
         This is used to show validation errors on to the webpage in the component "ValidationMessage" seen below.
-        If the status is 201 the user is redirected to the "login" page.
+        If the status is 201 the user is redirected to the "home screen".
         If another error occurs the user is redirected to the "error" path.
        */
       postData = (event) => {
@@ -67,7 +67,7 @@ class UserSignUp extends Component {
             .then(respond => {
                 statCode = respond.status;
                 if(statCode===201){
-                    this.props.history.push('/signin');
+                    this.props.history.push('/');
                 } else {
                     return respond.json();
                 }
