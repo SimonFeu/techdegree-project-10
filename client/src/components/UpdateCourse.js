@@ -29,7 +29,7 @@ class UpdateCourse extends Component {
           If the status is 204 the user is redirected to the "course detail page".
           If another error occurs the user is redirected to the "error" path.
       */
-      putData = (event) => {
+      putData = (event, email, password) => {
         event.preventDefault();
         let title = this.state.title;
         let description = this.state.description;
@@ -41,7 +41,7 @@ class UpdateCourse extends Component {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8',
-                    'Authorization': `Basic ${btoa(`max.miller@millerinc.com:abcd1234`)}`
+                    'Authorization': `Basic ${btoa(`${email}:${password}`)}`
                 },
                 body: JSON.stringify({title,description,estimatedTime, materialsNeeded})
             })
@@ -148,7 +148,7 @@ class UpdateCourse extends Component {
                                         <ValidationMessage errorMsg={this.state.errorMsg}/>
                                     : ''
                                 } 
-                                <form onSubmit={(event) => this.putData(event)}>
+                                <form onSubmit={(event) => this.putData(event, context.email, context.password )}>
                                     <div className="main--flex">
                                         <div>
                                             <label htmlFor="courseTitle">Course Title</label>
