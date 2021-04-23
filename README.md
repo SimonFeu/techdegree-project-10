@@ -71,7 +71,7 @@ Users:
 | GET | http://localhost:5000/api/users/:id  |Getting the data from currently authenticated user|
 | POST | http://localhost:5000/api/users  | Creating a new user|
 
-Users:
+Courses:
 | Method  | Path | Description|
 | ------------- | ------------- | ------------- |
 | GET | http://localhost:5000/api/courses/  | Sending a list of courses as response|
